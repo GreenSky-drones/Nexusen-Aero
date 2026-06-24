@@ -1,1 +1,27 @@
+project_name: "Nexusen Aero"
+experiment_name: "efficientnet_b3_v1"
 
+dataset:
+  train_dir: "/content/dataset/train"
+  val_dir: "/content/dataset/val"
+  test_dir: "/content/dataset/test"
+
+model:
+  name: "efficientnet_b3"
+  num_classes: 3
+  pretrained: true
+
+image:
+  size: 300
+
+train:
+  batch_size: 16
+  num_workers: 2
+  epochs: 15
+  lr: 0.0003
+  weight_decay: 0.0001
+  seed: 42
+
+save:
+  best_model_path: "/content/drive/MyDrive/Nexusen/weights/nexusen_aero_best.pth"
+  last_model_path: "/content/drive/MyDrive/Nexusen/weights/nexusen_aero_last.pth"
