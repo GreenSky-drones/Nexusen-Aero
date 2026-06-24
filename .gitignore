@@ -1,1 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
 
+weights/*.pth
+weights/*.pt
+
+outputs/*
+!outputs/.gitkeep
+
+.DS_Store
+.ipynb_checkpoints/
